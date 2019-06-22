@@ -8,6 +8,8 @@ cache:
     directories:
         - "~/.platformio"
 
+env LC_ALL=en_US.UTF-8 /usr/bin/python ./doit.py
+
 install:
     # - pip install -U platformio
     # Use development version of PlatformIO 3.2 (temporary)
@@ -18,4 +20,3 @@ script:
     - echo "Run desktop (native) tests on Travis.CI Linux machine"
     - platformio test -e native　　
 
-env LC_ALL=en_US.UTF-8 /usr/bin/python ./doit.py
