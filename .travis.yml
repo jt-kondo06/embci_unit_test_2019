@@ -17,3 +17,5 @@ install:
 script:
     - echo "Run desktop (native) tests on Travis.CI Linux machine"
     - platformio test -e native　　
+
+env LC_ALL=en_US.UTF-8 /usr/bin/python ./doit.py
